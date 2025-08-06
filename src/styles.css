@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color: #2c3e50;
+  --secondary-color: #1abc9c;
+}
+.bg-main {
+  background-color: var(--main-color);
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-sec {
+  background-color: var(--secondary-color);
+}
+.text-color {
+  color: var(--secondary-color);
+}
+.btn-main {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 25px;
+  outline: unset;
+  border-radius: 10px;
+}
+a,
+a:active {
+  color: #fff !important;
+  text-decoration: none;
+}
+.pt-105 {
+  padding-top: 105px;
+}
+.vh-90 {
+  height: 90vh;
+}

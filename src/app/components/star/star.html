@@ -1,1 +1,9 @@
-<p>star works!</p>
+<div  [style.color]="customColor">
+  <h1 class="text-uppercase">{{ titleStar }}</h1>
+  <div class="star d-flex justify-content-center align-items-center my-2">
+    <div class="line" [style.background]="customColor"></div>
+
+    <i class="fa-solid fa-star"></i>
+    <div class="line" [style.background]="customColor"></div>
+  </div>
+</div>

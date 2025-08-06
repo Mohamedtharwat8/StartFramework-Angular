@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './star.css'
 })
 export class Star {
+  @Input() titleStar: string = '';
+  @Input() customColor: string = '';
 
 }
