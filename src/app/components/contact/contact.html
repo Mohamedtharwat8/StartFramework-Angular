@@ -1,1 +1,73 @@
-<p>contact works!</p>
+<section
+  class="vh-90 d-flex flex-column justify-content-center align-items-center"
+>
+  <app-star
+    [titleStar]="'Contact Component'"
+    [customColor]="'var(--main-color)'"
+  ></app-star>
+
+  <form class="w-50 mx-auto">
+    <!-- userName -->
+    <label
+      for="userName"
+      class="text-sec my-2 position-relative top-0"
+      [class.top-40]="!userName"
+      >User Name:</label
+    >
+    <input
+      type="text"
+      placeholder="userName"
+      id="userName"
+      name="userName"
+      [(ngModel)]="userName"
+      class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+    />
+    <!-- userAge -->
+    <label
+      for="userAge"
+      class="text-sec my-2 position-relative top-0"
+      [class.top-40]="!userAge"
+      >User Age:</label
+    >
+    <input
+      type="text"
+      placeholder="userAge"
+      id="userAge"
+      name="userAge"
+      [(ngModel)]="userAge"
+      class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+    />
+    <!-- userEmail -->
+    <label
+      for="userEmail"
+      class="text-sec my-2 position-relative top-0"
+      [class.top-40]="!userEmail"
+      >User Email:</label
+    >
+    <input
+      type="text"
+      placeholder="userEmail"
+      name="userEmail"
+      id="userEmail"
+      [(ngModel)]="userEmail"
+      class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+    />
+    <!-- userPassword -->
+    <label
+      for="userPassword"
+      class="text-sec my-2 position-relative top-0"
+      [class.top-40]="!userPassword"
+      >User Password:</label
+    >
+    <input
+      type="text"
+      placeholder="userPassword"
+      name="userPassword"
+      id="userPassword"
+      [(ngModel)]="userPassword"
+      class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+    />
+
+    <button class="btn-main mt-3">Submit</button>
+  </form>
+</section>

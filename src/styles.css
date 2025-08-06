@@ -11,7 +11,7 @@
 .bg-sec {
   background-color: var(--secondary-color);
 }
-.text-color {
+.text-sec {
   color: var(--secondary-color);
 }
 .btn-main {
@@ -31,4 +31,15 @@ a:active {
 }
 .vh-90 {
   height: 90vh;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .pt-105 {
+    padding-top: 95px;
+  }
 }
