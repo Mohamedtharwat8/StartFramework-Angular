@@ -1,1 +1,31 @@
-<p>portfolio works!</p>
+<section class="d-flex flex-column justify-content-center align-items-center">
+  <app-star
+    [titleStar]="'Prtfolio Component'"
+    [customColor]="'var(--main-color)'"
+  ></app-star>
+  <div class="container">
+    <div class="row g-3">
+      @for (item of portfolioSrc; track $index) {
+      <div class="col-lg-4 col-md-6">
+        <figure class="position-relative overflow-hidden p">
+          <img [src]="item" class="w-100 rounded-3" alt="port" />
+          <figcaption
+            (click)="flag = !flag; modelImg = item"
+            class="position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center bg-sec rounded-3 text-white fs-1 bg-opacity-25"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </figcaption>
+        </figure>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<div
+  (click)="hideModel($event.target, img)"
+  [class.d-none]="flag"
+  class="model position-fixed start-0 top-0 h-100 w-100 d-flex justify-content-center align-items-center bg-primary bg-opacity-50"
+>
+  <img #img [src]="modelImg" width="650" class="rounded-3" alt="" />
+</div>
